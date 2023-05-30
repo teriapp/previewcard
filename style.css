@@ -9,16 +9,17 @@
 
 body {
     background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 
 }
 
 .container {
-    margin: auto;
     display: flex;
     column-count: 2;
     width: 596px;
     background-color: white;
-    margin-top: 150px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -62,15 +63,17 @@ h1 {
 
 }
 
+
 .price {
 
-justify-content: space-between;
+justify-content: center;
 }
 
 .saleprice {
 font-family: 'Fraunces', serif;
 color:hsl(158, 36%, 37%);
 font-size: 2rem;
+display: flex; justify-content: flex-start; align-items: center; gap: 1rem;
 }
 
 .oldprice {
